@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A List Apart Article Manager</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.css" />
+    
+</head>
+
+<body class="container">
+    <h1>A List Apart <small>Article Manager</small></h1>
+    <div id="table-tabs" class="row hide">
+        <p class="col-xs-3 text-right">View articles:</p>
+        <div class="col-xs-9 btn-group">
+            <a id="normal-tab" href="#normal" class="btn btn-default active">Normal</a>
+            <a id="archive-tab" href="#archive" class="btn btn-default">Archived</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12" id="normal">
+            <h2>Articles</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Author</th>
+                        <th>Date written</th>
+                        <th>Date published</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>Considering How We Use HTTP/2</td>
+                        <td>Jeremy Wagner</td>
+                        <td>Feb. 02, 2017</td>
+                        <td class="pub-date">Feb. 02, 2017</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td>Gaming the System…and Winning</td>
+                        <td>Graham Herrli</td>
+                        <td>Jan. 24, 2017</td>
+                        <td class="pub-date">Jan. 24, 2017</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td>Guerrilla Innovation</td>
+                        <td>Janice Gervais</td>
+                        <td>Jan. 17, 2017</td>
+                        <td class="pub-date">Jan. 17, 2017</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>A Dao of Product Design</td>
+                        <td>Faruk Artes</td>
+                        <td>Jan. 12, 2017</td>
+                        <td class="pub-date">&#8212;</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The Imbalance of Culture Fit</td>
+                        <td>Matt Griffin</td>
+                        <td>Jan. 03, 2017</td>
+                        <td class="pub-date">&#8212;</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Learning from Lego: A Step Forward in Modular Web Design</td>
+                        <td>Samantha Zhang</td>
+                        <td>Dec. 22, 2016</td>
+                        <td class="pub-date">&#8212;</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Demystifying Public Speaking</td>
+                        <td>Lara Hogan</td>
+                        <td>Dec. 15, 2016</td>
+                        <td class="pub-date">&#8212;</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-xs-12" id="archive">
+            <h2>Archived Articles</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Author</th>
+                        <th>Date written</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Managing Ego</td>
+                        <td>Brandon Gregory</td>
+                        <td>Dec. 13, 2016</td>
+                        <td class="pub-date">&#8212;</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Accessibility Whack-A-Mole</td>
+                        <td>Eleanor Ratliff</td>
+                        <td>Dec. 06, 2016</td>
+                        <td class="pub-date">&#8212;</td>
+                        <td>
+                            <button class="btn btn-xs btn-info btn-unpublish">Unpublish</button>
+                            <button class="btn btn-xs btn-info btn-publish">Publish</button>
+                            <button class="btn btn-xs btn-default btn-archive">Archive</button>
+                            <button class="btn btn-xs btn-success btn-unarchive">Unarchive</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
